@@ -1,5 +1,44 @@
 # Jify Discount
 
+**[下載 v2.1.0 安裝 ZIP](https://github.com/yves01480/jify-discount/releases/download/v2.1.0/jify-discount.zip)** · [版本紀錄](https://github.com/yves01480/jify-discount/releases) · [試用／問題回報](https://github.com/yves01480/jify-discount/issues/new?template=store-feedback.md)
+
+免費開源（GPL-2.0-or-later）。已有 WordPress＋WooCommerce 商店即可在測試站開始；主機與其他服務費用另計。
+
+## 滿額優惠自動套用，顧客不用記折扣碼。
+
+適合要對指定商品或規格安排滿額促銷的 WooCommerce 店家。可以設定固定金額、百分比與活動日期，達到門檻後自動計算優惠。
+
+### 滿額門檻與折扣對象，分開看就清楚
+
+假設購物車商品金額 NT$2,400，其中符合優惠的商品明細為 NT$1,200：
+
+| 商品設定的規則 | 這筆商品明細的折扣 |
+|---|---:|
+| 商品金額滿 NT$1,000，折 NT$100 | NT$100 |
+| 商品金額滿 NT$2,000，折 15% | NT$180 |
+
+兩個門檻都符合時，這筆明細採用較大的 **NT$180** 折扣。
+
+- **指定商品／規格：** 將活動設在要促銷的商品上。
+- **安排活動期間：** 依 WordPress 網站時區設定開始與結束日期。
+- **顯示促銷訊息：** 在折扣金額旁補上活動說明。
+
+**第一次試用：** 到 **商品資料 → Jify Discount** 啟用一個商品的規則，測試門檻以下、剛好達標與多筆符合商品的購物車。
+
+> 固定折扣是「每筆符合資格的商品明細」計算；門檻不包含運費，介面的 Include Shipping 選項目前不生效。折扣以負費用列呈現，可能與優惠券疊加；上線前請核對你的活動總折扣。
+
+### 下載後怎麼安裝
+
+1. 下載上方 **jify-discount.zip**，不需解壓縮。
+2. 到 WordPress **外掛 → 安裝外掛 → 上傳外掛**，選取 ZIP 後安裝、啟用。
+3. 依上面的第一次試用情境設定；版本需求與完整行為請見下方英文文件。
+
+有想套用的店家情境？[告訴我你的設定與預期結果](https://github.com/yves01480/jify-discount/issues/new?template=store-feedback.md)，也歡迎回報第一次安裝卡在哪一步。GitHub Issue 是公開的，請使用測試資料。
+
+---
+
+## English documentation
+
 > Product- and variation-aware threshold discounts for WooCommerce, with fixed or percentage rules, scheduling, and item-level discount data for downstream tax calculations.
 
 ![License: GPLv2+](https://img.shields.io/badge/License-GPLv2%2B-blue.svg)
